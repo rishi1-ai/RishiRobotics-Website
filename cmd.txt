@@ -1,0 +1,18 @@
+D:\website\backend>python manage.py runserver
+
+http://127.0.0.1:8000/api/articles/
+
+For Admin panel - http://127.0.0.1:8000/admin
+
+(base) D:\website\frontend>npm run dev
+
+http://localhost:3000
+
+use double hash(##) for bold letters.
+use **word** for bold particular letter.
+use (-) for bullets 
+
+# = H1 (Huge Title)
+## = H2 (Big Section Header) 
+### = H3 (Medium Sub-header) 
+**Text** = Bold (Small, just bold)

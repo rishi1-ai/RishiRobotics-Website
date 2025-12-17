@@ -1,0 +1,749 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Galactic || Template Documentation</title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    <style type="text/css" media="screen">
+        p,
+        table,
+        hr,
+        .box {
+            margin-bottom: 25px;
+        }
+
+        .box p {
+            margin-bottom: 10px;
+        }
+
+        .added1 {
+            background-color: #336600;
+            color: #FFFFFF;
+        }
+
+    </style>
+
+    <!-- Syntax Highlighter -->
+    <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+</head>
+
+
+<body>
+    <div class="container">
+
+        <h3 class="center alt">&ldquo;Galactic&rdquo; Documentation by &ldquo;ThemeEaster&rdquo; v1.0</h3>
+
+        <hr>
+
+        <h1 class="center">&ldquo;Galactic&rdquo;</h1>
+
+        <div class="borderTop">
+            <div class="span-6 colborder info prepend-1">
+                <p class="prepend-top">
+                    <strong>
+                        Updated: 01/6/2025<br>
+                        By: <a href="https://themeforest.net/user/themeeaster/portfolio">ThemeEaster</a><br>
+                        <br>
+                    </strong><strong><br>
+                    </strong>
+                </p>
+            </div><!-- end div .span-6 -->
+
+            <div class="span-12 last">
+                <p class="prepend-top append-0">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please contact our support. Thanks so much!</p>
+            </div>
+        </div><!-- end div .borderTop -->
+
+        <hr>
+
+        <h2 id="toc" class="alt">Table of Contents</h2>
+        <ol class="alpha">
+            <li><a href="#htmlStructure">HTML Structure</a></li>
+            <li><a href="#temp-components">Template Components</a></li>
+            <li><a href="#cssFiles">CSS Files and Structure</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+            <li><a href="#credits">Sources and Credits</a></li>
+            <li><a href="#php">PHP Code Explanation</a> <em class="quiet small">(If your theme uses PHP)</em></li>
+        </ol>
+
+        <hr>
+
+        <h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+        <p>Below is the general HTML structure of the landing page.<br>
+        </p>
+
+        <h4 id="front-html-structures"><strong>1) index.html File Structure</strong> - <a href="#toc">top</a></h4>
+
+        <p>The template page's layout consist of top that show the logo and main menu, hero section that show background image, beforecontent that show some amaizing content, about section contain about your some info & feature, service section contained all services, work section you can showcase your portfolio with awesome animation, skills section here you can add some skills, team section is for your team members, testimonial section here you can published your customer reviews, call to action this for call to action content, contact section here you can put your contact information & footer that show copyright information.</p>
+
+        <pre class="brush: html;" id="front-html-structure-pre">
+&lt;!doctype html>
+&lt;!--[if lt IE 7]>      &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> &lt;![endif]-->
+&lt;!--[if IE 7]>         &lt;html class="no-js lt-ie9 lt-ie8" lang=""> &lt;![endif]-->
+&lt;!--[if IE 8]>         &lt;html class="no-js lt-ie9" lang=""> &lt;![endif]-->
+&lt;!--[if gt IE 8]>&lt;!--> &lt;html class="no-js" lang="en"> &lt;!--&lt;![endif]-->
+    &lt;head>
+        &lt;meta charset="utf-8">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+		&lt;meta name="description" content="Galactic eSports and Gaming HTML5 Template">
+        &lt;meta name="author" content="ThemeEaster">
+       
+        &lt;title>Galactic | eSports and Gaming HTML5 Template&lt;/title>
+        
+		&lt;link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+		
+        &lt;link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        &lt;link rel="stylesheet" href="assets/css/animate.min.css">
+        &lt;link rel="stylesheet" href="assets/css/fontawesome.min.css">
+        &lt;link rel="stylesheet" href="assets/css/line-awesome.min.css">
+        &lt;link rel="stylesheet" href="assets/css/odometer.min.css">
+        &lt;link rel="stylesheet" href="assets/css/venobox.min.css">
+        &lt;link rel="stylesheet" href="assets/css/keyframe-animation.css">
+        &lt;link rel="stylesheet" href="assets/css/swiper.min.css">
+        &lt;link rel="stylesheet" href="assets/css/header.css">
+        &lt;link rel="stylesheet" href="assets/css/blog.css">
+        &lt;link rel="stylesheet" href="assets/css/shop.css">
+        &lt;link rel="stylesheet" href="assets/css/elements.css">
+        &lt;link rel="stylesheet" href="assets/css/main.css">
+        &lt;link rel="stylesheet" href="assets/css/responsive.css">
+
+    &lt;/head>
+    
+    &lt;body>
+    &lt;!--[if lt IE 8]>
+        &lt;p class="browserupgrade">You are using an &lt;strong>outdated&lt;/strong> browser. Please &lt;a href="http://browsehappy.com/">upgrade your browser&lt;/a> to improve your experience.&lt;/p>
+    &lt;![endif]-->
+       
+        &lt;div class="site-preloader">
+            &lt;div class="spinner">&lt;/div>
+        &lt;/div>&lt;!--site preloader-->
+        
+        &lt;header class="header">
+            
+        &lt;/header>&lt;!-- /.site-header-->
+        
+        &lt;div id="popup-search-box">
+            
+        &lt;/div>&lt;!-- /#popup-search-box -->
+
+        &lt;section class="hero-section">
+            
+        &lt;/section>&lt;!--/.hero-section  -->
+
+        &lt;section class="matches-section padding">
+            
+        &lt;/section>&lt;!-- /.matches-section -->
+
+        &lt;section class="watch-live-section padding-bottom">
+            
+        &lt;/section>&lt;!-- /.watch-live-section -->
+
+        &lt;section class="team-section padding-bottom">
+            
+        &lt;/section> &lt;!-- /.team-section -->
+        
+        &lt;section class="contact-section padding-bottom">
+            
+        &lt;/section>&lt;!-- /.contact-section -->
+        
+        &lt;div class="sponsor-section padding-bottom">
+            
+        &lt;/div>&lt;!-- /.sponsor-section -->
+        
+        &lt;section class="shop-section padding-bottom">
+            
+        &lt;/section>&lt;!-- /.shop-section -->
+        
+        &lt;section class="blog-section">
+            
+        &lt;/section>&lt;!--blog-section-->
+        
+        &lt;footer class="footer-section">
+            
+        &lt;/footer>&lt;!--footer-section-->
+       
+        &lt;div id="scrollup">
+            &lt;button id="scroll-top" class="scroll-to-top hover-target">&lt;i class="las la-arrow-up">&lt;/i>&lt;/button>
+        &lt;/div>&lt;!--scrollup-->
+
+		&lt;!--jQuery Lib-->
+		&lt;script src="assets/js/vendor/jquary-3.6.0.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/jquery.ajaxchimp.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/bootstrap.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/popper.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/odometer.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/waypoints.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/venobox.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/swiper.min.js">&lt;/script>
+		&lt;script src="assets/js/vendor/smooth-scroll.js">&lt;/script>
+		&lt;script src="assets/js/vendor/wow.min.js">&lt;/script>
+		&lt;script src="assets/js/main.js">&lt;/script>
+   
+    &lt;/body>
+&lt;/html>
+        </pre>
+        <hr>
+
+
+        <h3 id="temp-components"><strong>B) Template Components</strong> - <a href="#toc">top</a></h3>
+        <p>The site is made of many sections like header, slider, testimonials, services and more...</p>
+
+        <h4 id="slider"><strong>1) Header Section</strong> - <a href="#toc">top</a></h4>
+
+
+        <pre class="brush: html;">
+&lt;header class="header">
+	&lt;div class="primary-header">
+		&lt;div class="container">
+			&lt;div class="primary-header-inner">
+				&lt;div class="header-logo">
+					&lt;a href="index.html">
+						&lt;img class="logo" src="assets/img/logo.png" alt="Logo"/>
+					&lt;/a>
+				&lt;/div>&lt;!-- /.header-logo -->
+				&lt;div class="header-menu-wrap">
+					&lt;ul class="nav-menu">
+						&lt;li class="active">&lt;a href="index.html">Home&lt;/a>
+							&lt;ul>
+								&lt;li>&lt;a href="index.html">Home Default&lt;/a>&lt;/li>
+							&lt;/ul>
+						&lt;/li>
+						&lt;li>&lt;a href="#">Tournament&lt;/a>
+							&lt;ul>
+								&lt;li>&lt;a href="upcoming-matches.html">Upcoming Matches&lt;/a>&lt;/li>
+							&lt;/ul>
+						&lt;/li>
+						&lt;li>&lt;a href="contact.html">Contact&lt;/a>&lt;/li>
+					&lt;/ul>
+				&lt;/div>&lt;!-- /.header-menu-wrap -->
+				&lt;div class="header-right">
+					&lt;div class="search-icon dl-search-icon">&lt;i class="las la-search">&lt;/i>&lt;/div>
+					&lt;a class="default-btn" href="contact.html">Join Our Team&lt;/a>
+					&lt;!-- Burger menu -->
+					&lt;div class="mobile-menu-icon">
+						&lt;div class="burger-menu">
+							&lt;div class="line-menu line-half first-line">&lt;/div>
+							&lt;div class="line-menu">&lt;/div>
+							&lt;div class="line-menu line-half last-line">&lt;/div>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>&lt;!-- /.header-right -->
+			&lt;/div>&lt;!-- /.primary-header-one-inner -->
+		&lt;/div>
+	&lt;/div>&lt;!-- /.primary-header -->
+&lt;/header>&lt;!-- /.site-header-->
+</pre>
+
+
+        <hr>
+        <h4 id="portfolio"><strong>2) Hero Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+&lt;section class="hero-section">
+	&lt;div class="container">
+		&lt;div class="hero-content">
+			&lt;h4>Enjoy The Games&lt;/h4>
+			&lt;h1>Epic Games Made For&lt;br> True Gamers!&lt;/h1>
+			&lt;div class="btn-group">
+				&lt;a href="contact.html" class="default-btn">Join With Us&lt;/a>
+				&lt;a data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=tv7LfFeamsc" class="dl-video-popup play-btn">
+					&lt;svg enable-background="new 0 0 41.999 41.999" version="1.1" viewBox="0 0 41.999 41.999" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">&lt;path d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40  c0,0.372,0.206,0.713,0.535,0.886c0.146,0.076,0.306,0.114,0.465,0.114c0.199,0,0.397-0.06,0.568-0.177l29-20  c0.271-0.187,0.432-0.494,0.432-0.823S36.338,20.363,36.068,20.176z M7.5,39.095V2.904l26.239,18.096L7.5,39.095z">&lt;/path>
+					&lt;/svg>
+					&lt;div class="ripple">&lt;/div>
+				&lt;/a>
+			&lt;/div>
+			&lt;div class="hero-element">
+				&lt;img src="assets/img/game-charecters.png" alt="thumb">
+				&lt;div class="shape-wrap">
+					&lt;div class="shape shape-1">&lt;/div>
+				&lt;/div>
+				&lt;div class="shape-wrap right">
+					&lt;div class="shape shape-1">&lt;/div>
+				&lt;/div>
+			&lt;/div>&lt;!-- /.hero-element -->
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="gradiant-border">&lt;/div>
+&lt;/section>&lt;!--/.hero-section  -->
+</pre>
+
+        <hr>
+
+        <h4 id="portfolio"><strong>3) Matches Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+&lt;section class="matches-section padding">
+	&lt;div class="container">
+		&lt;div class="section-heading mb-40 text-center wow fade-in-bottom" data-wow-delay="200ms">
+			&lt;h3>Upcoming matches&lt;/h3>
+		   &lt;h2>Battles Extreme &lt;br> Masters &lt;span>Tournament&lt;/span>&lt;/h2>
+		   &lt;p>Our success in creating business solutions is due in large part &lt;br>to our talented and highly committed team.&lt;/p>
+		&lt;/div>
+		&lt;ul class="upcoming-matches">
+			&lt;li class="matches-list">
+				&lt;div class="participate-team wow fade-in-left" data-wow-delay="200ms">
+					&lt;img src="assets/img/team-logo-1.png" alt="team">
+					&lt;h3>&lt;a href="team-details.html">Purple Death Cadets&lt;/a>&lt;/h3>
+					&lt;div class="match-info">Group 04 | Match 06th&lt;/div>
+				&lt;/div>
+				&lt;div class="match-time">
+					&lt;h3>10:00 &lt;span>25TH May 2024&lt;/span>&lt;/h3>
+					&lt;ul class="watch-btn">
+						&lt;li>&lt;a class="dl-video-popup" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=tv7LfFeamsc">&lt;i class="lab la-youtube">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a class="dl-video-popup" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=tv7LfFeamsc">&lt;i class="lab la-twitch">&lt;/i>&lt;/a>  &lt;/li>
+					&lt;/ul>
+				&lt;/div>
+				&lt;div class="participate-team oponent wow fade-in-right" data-wow-delay="200ms">
+					&lt;h3>&lt;a href="team-details.html">Trigger Brain Squad&lt;/a>&lt;/h3>
+					&lt;div class="match-info">Group 04 | Match 06th&lt;/div>
+					&lt;img src="assets/img/team-logo-2.png" alt="team">
+				&lt;/div>
+			&lt;/li>&lt;!-- /.matches-list-1 -->
+		&lt;/ul>
+	&lt;/div>
+&lt;/section>&lt;!-- /.matches-section -->
+</pre>
+
+        <br>
+
+        <hr>
+
+        <h4 id="portfolio"><strong>4) Watch Live Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+&lt;section class="watch-live-section padding-bottom">
+	&lt;div class="container">
+		&lt;div class="section-heading mb-40 text-center wow fade-in-bottom" data-wow-delay="200ms">
+			&lt;h3>Watch The Gameplay&lt;/h3>
+		   &lt;h2>Watch Live &lt;span>Streaming&lt;/span>&lt;/h2>
+		   &lt;p>Our success in creating business solutions is due in large part &lt;br>to our talented and highly committed team.&lt;/p>
+		&lt;/div>
+		&lt;div class="carousel-wrap">
+			&lt;div class="watch-carousel swiper-container">
+				&lt;div class="swiper-wrapper">
+					&lt;div class="swiper-slide">
+						&lt;img src="assets/img/video-thumb-1.jpg" alt="thumb">
+						&lt;a data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=tv7LfFeamsc" class="dl-video-popup play-btn">
+							&lt;svg enable-background="new 0 0 41.999 41.999" version="1.1" viewBox="0 0 41.999 41.999" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">&lt;path d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40  c0,0.372,0.206,0.713,0.535,0.886c0.146,0.076,0.306,0.114,0.465,0.114c0.199,0,0.397-0.06,0.568-0.177l29-20  c0.271-0.187,0.432-0.494,0.432-0.823S36.338,20.363,36.068,20.176z M7.5,39.095V2.904l26.239,18.096L7.5,39.095z">&lt;/path>
+							&lt;/svg>
+							&lt;div class="ripple">&lt;/div>
+						&lt;/a>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+			 &lt;!-- Carousel Arrows -->
+			 &lt;div class="swiper-nav swiper-next">&lt;i class="las la-long-arrow-alt-right">&lt;/i>&lt;/div>
+			 &lt;div class="swiper-nav swiper-prev">&lt;i class="las la-long-arrow-alt-left">&lt;/i>&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- /.watch-live-section -->
+</pre>
+
+        <br>
+
+        <hr>
+
+        <h4 id="portfolio"><strong>5) Team Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+&lt;section class="team-section padding-bottom">
+	&lt;div class="container">
+		&lt;div class="section-heading text-center mb-40 wow fade-in-bottom" data-wow-delay="200ms">
+			&lt;h3>Our Gammers&lt;/h3>
+		   &lt;h2>Meet Our &lt;span>Gamers&lt;/span>&lt;/h2>
+		   &lt;p>Our success in creating business solutions is due in large part &lt;br>to our talented and highly committed team.&lt;/p>
+		&lt;/div>
+		&lt;div class="outside-spacing">
+			&lt;div class="team-carousel">
+				&lt;div class="swiper-wrapper">
+					&lt;div class="swiper-slide">
+						&lt;div class="team-item">
+							&lt;div class="team-thumb">
+							   &lt;img src="assets/img/team-1.png" alt="thumb">
+								&lt;div class="shape-wrap">
+									&lt;div class="shape shape-1">&lt;/div>
+									&lt;div class="shape shape-2">&lt;/div>
+									&lt;div class="shape shape-3">&lt;/div>
+									&lt;div class="shape shape-4">&lt;/div>
+								&lt;/div>
+							&lt;/div>
+							&lt;div class="team-content">
+								&lt;span class="whte-shape">&lt;/span>
+								&lt;h3>&lt;a href="player-details.html">Brandon Larned&lt;/a>&lt;/h3>
+								&lt;h4>Overwatch&lt;/h4>
+							&lt;/div>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+				&lt;!-- Carousel Arrows -->
+				&lt;div class="swiper-nav swiper-next">&lt;i class="las la-long-arrow-alt-right">&lt;/i>&lt;/div>
+				&lt;div class="swiper-nav swiper-prev">&lt;i class="las la-long-arrow-alt-left">&lt;/i>&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section> &lt;!-- /.team-section -->
+</pre>
+
+        <br>
+
+        <hr>
+
+        <h4 id="portfolio"><strong>6) Contact Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+&lt;section class="contact-section padding-bottom">
+	&lt;div class="container">
+		&lt;div class="row align-items-center">
+			&lt;div class="col-md-6 sm-padding">
+				&lt;div class="section-heading">
+					&lt;h3>Send Us a Mail&lt;/h3>
+					&lt;h2>Join Us As a Super Fans and  Get all &lt;span>the Benefits&lt;/span>&lt;/h2>
+					&lt;p>Our success in creating business solutions is due in large part &lt;br>to our talented and highly committed team.&lt;/p>
+					&lt;a href="contact.html" class="default-btn">Join Our Team &lt;span>&lt;/span>&lt;/a>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-md-6 sm-padding">
+				&lt;div class="contact-form ml-40">
+					&lt;form action="contact.php" method="post" id="ajax_contact" class="form-horizontal">
+					   &lt;div class="contact-form-group">
+						   &lt;div class="form-field">
+							   &lt;input type="text" id="yourname" name="yourname" class="form-control" placeholder="Your Name" required="">
+						   &lt;/div>
+						   &lt;div class="form-field">
+							   &lt;input type="email" id="email" name="email" class="form-control" placeholder="Email" required="">
+						   &lt;/div>
+						   &lt;div class="form-field message">
+							   &lt;textarea id="message" name="message" cols="30" rows="4" class="form-control" placeholder="Message" required="">&lt;/textarea>
+						   &lt;/div>
+						   &lt;div class="form-field">
+							   &lt;button id="submit" class="default-btn" type="submit">Send Massage&lt;span>&lt;/span>&lt;/button>
+						   &lt;/div>
+						&lt;/div>
+						&lt;div id="form-messages" class="alert" role="alert">&lt;/div>
+					&lt;/form>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- /.contact-section -->
+</pre>
+
+        <br>
+
+        <hr>
+
+        <h4 id="portfolio"><strong>7) Sponsor Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+&lt;div class="sponsor-section padding-bottom">
+	&lt;div class="container">
+		&lt;div class="outside-spacing">
+			&lt;div class="sponsor-carousel">
+				&lt;div class="swiper-wrapper">
+					&lt;div class="swiper-slide">
+						&lt;img src="assets/img/client-1.png" alt="client">
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>&lt;!-- /.sponsor-section -->
+</pre>
+
+        <br>
+
+        <hr>
+
+        <h4 id="portfolio"><strong>8) Shop Section</strong> - <a href="#toc">top</a></h4>
+        <pre class="brush: html;">
+&lt;section class="shop-section padding-bottom">
+	&lt;div class="container">
+		&lt;div class="section-heading mb-40 text-center wow fade-in-bottom" data-wow-delay="200ms">
+			&lt;h3>Online Gaming Shop&lt;/h3>
+		   &lt;h2>Explore Our &lt;span>Gears&lt;/span>&lt;/h2>
+		   &lt;p>Our success in creating business solutions is due in large part &lt;br>to our talented and highly committed team.&lt;/p>
+		&lt;/div>
+		&lt;div class="outside-spacing">
+			&lt;div class="shop-carousel">
+				&lt;div class="swiper-wrapper">
+					&lt;div class="swiper-slide">
+						&lt;div class="product-card">
+							&lt;div class="product-thumb">
+								&lt;img src="assets/img/product-1.png" alt="img">
+								&lt;a href="#" class="badge in-stock">In Stock&lt;/a>
+								&lt;a href="cart.html" class="default-btn">Add To Cart&lt;/a>
+							&lt;/div>
+							&lt;div class="product-info">
+								&lt;div class="product-inner">
+								   &lt;ul class="category">
+									   &lt;li>&lt;a href="#">Steering&lt;/a>&lt;/li>
+								   &lt;/ul>
+								   &lt;ul class="rating">
+										&lt;li>&lt;i class="las la-star">&lt;/i>&lt;/li>
+										&lt;li>&lt;i class="las la-star">&lt;/i>&lt;/li>
+										&lt;li>&lt;i class="las la-star">&lt;/i>&lt;/li>
+										&lt;li>&lt;i class="las la-star">&lt;/i>&lt;/li>
+										&lt;li>&lt;i class="las la-star">&lt;/i>&lt;/li>
+									&lt;/ul>
+								&lt;/div>
+								&lt;h3>&lt;a href="shop-details.html">Steering Wheel&lt;/a>&lt;/h3>
+								&lt;h4 class="price">$69.00&lt;/h4>
+							&lt;/div>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+				&lt;!-- Carousel Arrows -->
+				 &lt;div class="swiper-nav swiper-next">&lt;i class="las la-long-arrow-alt-right">&lt;/i>&lt;/div>
+				 &lt;div class="swiper-nav swiper-prev">&lt;i class="las la-long-arrow-alt-left">&lt;/i>&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- /.shop-section -->
+</pre>
+
+        <br>
+
+        <h4><strong>9) Blog Section</strong></h4>
+        <pre class="brush: html;">
+&lt;section class="blog-section">
+	&lt;div class="container">
+		&lt;div class="section-heading mb-40 text-center wow fade-in-bottom" data-wow-delay="200ms">
+			&lt;h3>What's on our mind&lt;/h3>
+		   &lt;h2>News and &lt;span>Headlines&lt;/span>&lt;/h2>
+		   &lt;p>Our success in creating business solutions is due in large part &lt;br>to our talented and highly committed team.&lt;/p>
+		&lt;/div>
+		&lt;div class="row grid-post">
+			&lt;div class="col-lg-4 col-md-6 padding-15 wow fade-in-bottom" data-wow-delay="300ms">
+				&lt;div class="post-card">
+					&lt;div class="post-thumb">
+						&lt;img src="assets/img/post-1.jpg" alt="post">
+						&lt;a href="blog-classic.html" class="post-category">Business&lt;/a>
+					&lt;/div>
+					&lt;div class="post-content-wrap">
+						&lt;ul class="post-meta">
+							&lt;li>&lt;i class="las la-calendar">&lt;/i>Jan 01 2022&lt;/li>
+							&lt;li>&lt;i class="las la-user">&lt;/i>Elliot Alderson&lt;/li>
+						&lt;/ul>
+						&lt;div class="post-content">
+							&lt;h3>&lt;a href="blog-details.html">How to start initiating an startup in few days.&lt;/a>&lt;/h3>
+							&lt;p>Financial experts support or help you to to find out which way you can raise your funds more...&lt;/p>
+							&lt;a href="blog-details.html" class="read-more">Read More&lt;/a>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--blog-section-->
+</pre>
+
+        <br>
+
+        <h4><strong>10) Footer Section</strong></h4>
+        <pre class="brush: html;">
+&lt;footer class="footer-section">
+	&lt;div class="container">
+		&lt;div class="row footer-items">
+			&lt;div class="col-lg-3 col-sm-6 sm-padding">
+				&lt;div class="footer-item">
+					&lt;a class="brand" href="index.html">&lt;img src="assets/img/logo.png" alt="logo">&lt;/a>
+					&lt;p>Our success in creating business solutions is due in large part to our talented and highly committed team.&lt;/p>
+					&lt;ul class="social-list">
+						&lt;li>&lt;a href="#">&lt;i class="fab fa-facebook-f">&lt;/i>&lt;/a>&lt;/li>
+					&lt;/ul>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-lg-3 col-sm-6 sm-padding">
+				&lt;div class="footer-item footer-list">
+					&lt;div class="widget-title">
+					   &lt;h3>Usefull Links&lt;/h3>
+					&lt;/div>
+					&lt;ul class="footer-links">
+						&lt;li>&lt;a href="upcoming-matches.html">Tournaments&lt;/a>&lt;/li>
+					&lt;/ul>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-lg-3 col-sm-6 sm-padding">
+				&lt;div class="footer-item">
+					&lt;div class="widget-title">
+					   &lt;h3>Contact Us&lt;/h3>
+					&lt;/div>
+					&lt;ul class="footer-contact">
+					   &lt;li>&lt;span>Location:&lt;/span>153 Williamson Plaza, Maggieberg, MT 09514&lt;/li>
+				   &lt;/ul>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-lg-3 col-sm-6 sm-padding">
+				&lt;div class="footer-item subscribe-wrap">
+					&lt;div class="widget-title">
+					   &lt;h3>Newsletter Signup&lt;/h3>
+					&lt;/div>
+					&lt;form action="#" class="subscribe-form">
+						&lt;input class="form-control" type="email" name="email" placeholder="Your Email" required="">
+						&lt;input type="hidden" name="action" value="mailchimpsubscribe">
+						&lt;button class="submit">Subscribe Now&lt;/button>
+						&lt;div class="clearfix">&lt;/div>
+					&lt;/form>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="copyright-wrap">
+		&lt;div class="container">
+			&lt;p>© &lt;span id="currentYear">&lt;/span> ThemeEaster All Rights Reserved.&lt;/p>
+		&lt;/div>
+	&lt;/div>&lt;!--copyright-wrap-->
+&lt;/footer>&lt;!--footer-section-->
+</pre>
+
+        <br>
+        <hr>
+
+        <h4><strong>14) Contact Form Configure</strong></h4>
+        <p>Just open the <b>contact.php</b> file and add your email in the 20 no line. That's it.</p>
+        <pre class="brush: php;">
+&lt;?php
+
+    // Only process POST reqeusts.
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Get the form fields and remove whitespace.
+        $name = strip_tags(trim($_POST["name"]));
+        $name = str_replace(array("\r","\n"),array(" "," "),$name);
+        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+        $message = trim($_POST["message"]);
+
+        // Check that data was sent to the mailer.
+        if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            // Set a 400 (bad request) response code and exit.
+            http_response_code(400);
+            echo "Oops! There was a problem with your submission. Please complete the form and try again.";
+            exit;
+        }
+
+        // Update this to your desired email address.
+        $recipient = "contact@yourdomain.com";
+        $subject = "Message from $name";
+
+        // Email content.
+        $email_content = "Name: $name\n";
+        $email_content .= "Email: $email\n\n";
+        $email_content .= "Subject: $subject\n\n";
+        $email_content .= "Message: $message\n";
+
+        // Email headers.
+        $email_headers = "From: $name <$email>\r\nReply-to: <$email>";
+
+        // Send the email.
+        if (mail($recipient, $subject, $email_content, $email_headers)) {
+            // Set a 200 (okay) response code.
+            http_response_code(200);
+            echo "Thank You! Your message has been sent.";
+        } else {
+            // Set a 500 (internal server error) response code.
+            http_response_code(500);
+            echo "Oops! Something went wrong and we couldn't send your message.";
+        }
+
+    } else {
+        // Not a POST request, set a 403 (forbidden) response code.
+        http_response_code(403);
+        echo "There was a problem with your submission, please try again.";
+    }
+
+?>
+</pre>
+
+        <br>
+
+        <hr>
+
+        <p>&nbsp;</p>
+
+        <hr>
+        <h3 id="cssFiles"><strong>C) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+        <p>These are the css files:</p>
+        <ol>
+            <li>bootstrap.min.css</li>
+            <li>animate.min.css</li>
+            <li>elegant-font-icons.css</li>
+            <li>elegant-line-icons.css</li>
+            <li>owl.carousel.css</li>
+            <li>main.css </li>
+            <li>responsive.css</li>
+        </ol>
+
+
+        <p>&nbsp;</p>
+        <hr>
+
+        <h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+
+        <p>This theme use these Javascript files:</p>
+
+        <ol>
+            <li>jQuery<br>
+                jQuery is a Javascript library that greatly reduces the amount of code that you must write. jQuery use these javascript files:
+                <pre>
+            	bootstrap.min.js
+                popper.min.js
+                odometer.min.js
+                waypoints.min.js
+                venobox.min.js
+                swiper.min.js
+                smooth-scroll.js
+                wow.min.js
+                main.js
+            </pre>
+                You can edit the contact.js files. for setting contact form
+                <br>
+                <br>
+            </li>
+        </ol>
+
+        <hr>
+
+        <h3 id="credits"><strong>F) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+        <ol>
+            <li><a href="http://getbootstrap.com" target="_blank">Bootstrap 5</a></li>
+            <li><a href="https://swiperjs.com/" target="_blank">Swiperjs</a></li>
+            <li><a href="https://wowjs.uk/" target="_blank">WOW JS</a></li>
+            <li><a href="http://veno.es/venobox/" target="_blank">VenoBox</a></li>
+            <li><a href="https://github.com/cferdinandi/smooth-scroll" target="_blank">Smooth Scroll</a></li>
+            <li><a href="http://plugins.jquery.com/ajaxchimp/" target="_blank">AjaxChimp</a></li>
+            <li><a href="https://github.hubspot.com/odometer/" target="_blank">Odometer</a></li>
+            <li><a href="http://imakewebthings.com/waypoints/" target="_blank">Waypoints</a></li>
+        </ol>
+        <p>
+
+            <hr>
+        <h3 id="php"><strong>G) PHP Code Explanation </strong> - <a href="#toc">top</a></h3>
+        <p>There are only one php code for contact page which is contact.php, open this file and change the email and subject on line 19 and line 20.
+            No need to edit other code unless you really want to.
+            <hr>
+        <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.</p>
+
+        <p class="append-bottom alt large"><strong>ThemeEaster</strong></p>
+        <p><a href="#toc">Go To Table of Contents</a></p>
+
+        <hr class="space">
+    </div>
+    <!-- end div .container -->
+    <script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script>
+    <script type="text/javascript">
+        SyntaxHighlighter.all()
+
+    </script>
+</body>
+
+</html>
