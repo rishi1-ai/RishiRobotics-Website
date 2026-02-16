@@ -1,0 +1,156 @@
+[
+  {
+    "id": "cc0ca6df-b12a-4901-944d-df7a735a87a6",
+    "course_id": "b77e7f5c-689e-4ce4-b2f6-6d511a64db7f",
+    "title": "Introduction to Python",
+    "slug": "introduction",
+    "content": "Welcome to Python Programming! Python is a high-level, interpreted programming language known for its simplicity and readability.\n\nWhy Learn Python?\n- Easy to learn and read\n- Versatile: web development, data science, AI, automation\n- Large community and extensive libraries\n- High demand in the job market\n\nPython is used by companies like Google, Netflix, NASA, and Instagram. It's perfect for beginners yet powerful enough for experts.\n\nIn this course, you'll learn:\n1. Python basics and syntax\n2. Data structures and algorithms\n3. Object-oriented programming\n4. File handling and modules\n5. Real-world projects\n\nLet's start your Python journey!",
+    "order_index": 1,
+    "duration_minutes": 10,
+    "created_at": "2025-12-22 15:37:56.241507+00",
+    "updated_at": "2025-12-22 15:37:56.241507+00"
+  },
+  {
+    "id": "f95e050a-1766-4ca0-8d64-6108b621597d",
+    "course_id": "b77e7f5c-689e-4ce4-b2f6-6d511a64db7f",
+    "title": "Variables and Data Types",
+    "slug": "variables-data-types",
+    "content": "Variables are containers for storing data values. Python has various data types to handle different kinds of information.\n\nBasic Data Types:\n1. Numbers: int, float, complex\n2. Strings: text data\n3. Boolean: True or False\n4. NoneType: represents absence of value\n\nVariable Naming Rules:\n- Start with letter or underscore\n- Can contain letters, numbers, underscores\n- Case-sensitive (age and Age are different)\n- Cannot use Python keywords\n\nPython is dynamically typed, meaning you don't need to declare variable types explicitly.",
+    "order_index": 2,
+    "duration_minutes": 15,
+    "created_at": "2025-12-22 15:37:57.020467+00",
+    "updated_at": "2025-12-22 15:37:57.020467+00"
+  },
+  {
+    "id": "ca1bb685-8231-4051-9e0c-bcc26950e0d4",
+    "course_id": "b77e7f5c-689e-4ce4-b2f6-6d511a64db7f",
+    "title": "Control Flow: If-Else",
+    "slug": "control-flow",
+    "content": "Control flow statements allow you to execute different code blocks based on conditions.\n\nIf Statement:\nExecutes code only when condition is True.\n\nIf-Else Statement:\nExecutes one block if condition is True, another if False.\n\nIf-Elif-Else Statement:\nChecks multiple conditions in sequence.\n\nComparison Operators:\n- == (equal to)\n- != (not equal to)\n- > (greater than)\n- < (less than)\n- >= (greater than or equal to)\n- <= (less than or equal to)\n\nLogical Operators:\n- and: both conditions must be True\n- or: at least one condition must be True\n- not: negates the condition",
+    "order_index": 3,
+    "duration_minutes": 20,
+    "created_at": "2025-12-22 15:37:57.622914+00",
+    "updated_at": "2025-12-22 15:37:57.622914+00"
+  },
+  {
+    "id": "595ac1be-e8ef-4706-8469-66eacc3e67e5",
+    "course_id": "9253db7b-63c1-4224-b85e-84574d68f4bd",
+    "title": "What is Artificial Intelligence?",
+    "slug": "introduction-to-ai",
+    "content": "Artificial Intelligence (AI) is the simulation of human intelligence in machines programmed to think and learn like humans.\n\nTypes of AI:\n1. Narrow AI (Weak AI): Designed for specific tasks (Siri, chess programs)\n2. General AI (Strong AI): Can perform any intellectual task a human can\n3. Super AI: Surpasses human intelligence (theoretical)\n\nAI Applications:\n- Virtual assistants (Alexa, Google Assistant)\n- Self-driving cars\n- Medical diagnosis\n- Recommendation systems\n- Game playing (AlphaGo)\n\nCore AI Concepts:\n- Machine Learning\n- Natural Language Processing\n- Computer Vision\n- Robotics\n- Expert Systems\n\nAI aims to create systems that can reason, learn, perceive, and solve problems.",
+    "order_index": 1,
+    "duration_minutes": 15,
+    "created_at": "2025-12-22 15:37:58.444162+00",
+    "updated_at": "2025-12-22 15:37:58.444162+00"
+  },
+  {
+    "id": "f542025e-e5f3-4614-8d18-b6f4f38dfc4b",
+    "course_id": "9253db7b-63c1-4224-b85e-84574d68f4bd",
+    "title": "Search Algorithms",
+    "slug": "search-algorithms",
+    "content": "Search algorithms are fundamental to AI, used to find solutions in problem spaces.\n\nTypes of Search:\n1. Uninformed Search (Blind Search):\n   - Breadth-First Search (BFS)\n   - Depth-First Search (DFS)\n   - Uniform Cost Search\n\n2. Informed Search (Heuristic Search):\n   - Greedy Best-First Search\n   - A* Search\n   - Hill Climbing\n\nKey Concepts:\n- State Space: All possible configurations\n- Initial State: Starting point\n- Goal State: Desired outcome\n- Actions: Possible moves\n- Path Cost: Cost of reaching a state\n\nA* Algorithm:\nCombines actual cost from start and estimated cost to goal.\nf(n) = g(n) + h(n)\n- g(n): cost from start to node n\n- h(n): estimated cost from n to goal",
+    "order_index": 2,
+    "duration_minutes": 25,
+    "created_at": "2025-12-22 15:37:58.837932+00",
+    "updated_at": "2025-12-22 15:37:58.837932+00"
+  },
+  {
+    "id": "bec6109d-800b-4696-8283-6490cecc0f76",
+    "course_id": "0d66de7f-15b6-4e7c-a62d-fe2e0f7f17c5",
+    "title": "Introduction to Machine Learning",
+    "slug": "ml-introduction",
+    "content": "Machine Learning is a subset of AI that enables systems to learn and improve from experience without explicit programming.\n\nTypes of Machine Learning:\n\n1. Supervised Learning:\n   - Learn from labeled data\n   - Predict outputs for new inputs\n   - Examples: classification, regression\n\n2. Unsupervised Learning:\n   - Learn patterns from unlabeled data\n   - Examples: clustering, dimensionality reduction\n\n3. Reinforcement Learning:\n   - Learn through trial and error\n   - Agent interacts with environment\n   - Examples: game playing, robotics\n\nKey Concepts:\n- Training Data: Data used to train the model\n- Testing Data: Data used to evaluate the model\n- Features: Input variables\n- Labels: Output variables (supervised learning)\n- Model: Mathematical representation of patterns\n\nML Workflow:\n1. Data collection\n2. Data preprocessing\n3. Feature engineering\n4. Model selection\n5. Training\n6. Evaluation\n7. Deployment",
+    "order_index": 1,
+    "duration_minutes": 20,
+    "created_at": "2025-12-22 15:37:59.429604+00",
+    "updated_at": "2025-12-22 15:37:59.429604+00"
+  },
+  {
+    "id": "84812931-06d8-4219-98aa-5295338ca902",
+    "course_id": "0d66de7f-15b6-4e7c-a62d-fe2e0f7f17c5",
+    "title": "Linear Regression",
+    "slug": "linear-regression",
+    "content": "Linear Regression is a supervised learning algorithm used to predict continuous values.\n\nConcept:\nFind the best-fitting straight line through data points to predict outcomes.\n\nEquation:\ny = mx + b\n- y: predicted value\n- x: input feature\n- m: slope (weight)\n- b: y-intercept (bias)\n\nMultiple Linear Regression:\ny = b₀ + b₁x₁ + b₂x₂ + ... + bₙxₙ\n\nCost Function:\nMean Squared Error (MSE) measures prediction accuracy:\nMSE = (1/n) Σ(yᵢ - ŷᵢ)²\n\nGradient Descent:\nOptimization algorithm to minimize cost function by adjusting weights.\n\nApplications:\n- House price prediction\n- Sales forecasting\n- Stock price prediction\n- Salary estimation",
+    "order_index": 2,
+    "duration_minutes": 25,
+    "created_at": "2025-12-22 15:37:59.829828+00",
+    "updated_at": "2025-12-22 15:37:59.829828+00"
+  },
+  {
+    "id": "08f89dd9-3d27-4d42-b8a1-4dfbc6483e07",
+    "course_id": "65fdcd77-cfe2-44c5-8c44-e8ea0dbc13c1",
+    "title": "Introduction to Deep Learning",
+    "slug": "deep-learning-intro",
+    "content": "Deep Learning is a subset of Machine Learning using artificial neural networks with multiple layers.\n\nWhat Makes it \"Deep\"?\nMultiple hidden layers between input and output layers allow learning complex patterns.\n\nKey Components:\n\n1. Neurons (Nodes):\n   Basic computational units that receive inputs, apply weights, and produce outputs.\n\n2. Layers:\n   - Input Layer: Receives raw data\n   - Hidden Layers: Process and transform data\n   - Output Layer: Produces final predictions\n\n3. Activation Functions:\n   Non-linear functions that introduce complexity:\n   - ReLU: max(0, x)\n   - Sigmoid: 1/(1 + e^(-x))\n   - Tanh: (e^x - e^(-x))/(e^x + e^(-x))\n\nWhy Deep Learning?\n- Automatic feature extraction\n- Handles large amounts of data\n- Superior performance in complex tasks\n- State-of-the-art results in vision, NLP, speech\n\nApplications:\n- Image recognition\n- Natural language processing\n- Speech recognition\n- Autonomous vehicles\n- Game playing (AlphaGo)",
+    "order_index": 1,
+    "duration_minutes": 20,
+    "created_at": "2025-12-22 15:38:00.231005+00",
+    "updated_at": "2025-12-22 15:38:00.231005+00"
+  },
+  {
+    "id": "f14e1698-e35f-40de-b4e4-6ea231c6a1f3",
+    "course_id": "65fdcd77-cfe2-44c5-8c44-e8ea0dbc13c1",
+    "title": "Neural Networks Fundamentals",
+    "slug": "neural-networks",
+    "content": "Neural Networks are computing systems inspired by biological neural networks in animal brains.\n\nArchitecture:\n\n1. Input Layer:\n   Receives feature data (pixels, text, numbers)\n\n2. Hidden Layers:\n   Process information through weighted connections\n   Each neuron: output = activation(Σ(weight × input) + bias)\n\n3. Output Layer:\n   Produces final prediction or classification\n\nForward Propagation:\nData flows from input to output through network layers.\n\nBackpropagation:\nAlgorithm for training neural networks:\n1. Calculate error between prediction and actual value\n2. Propagate error backward through network\n3. Update weights to minimize error\n\nLoss Functions:\n- Mean Squared Error (regression)\n- Cross-Entropy (classification)\n\nOptimization:\n- Gradient Descent\n- Stochastic Gradient Descent (SGD)\n- Adam Optimizer\n\nTraining Process:\n1. Initialize weights randomly\n2. Forward pass: make predictions\n3. Calculate loss\n4. Backward pass: compute gradients\n5. Update weights\n6. Repeat until convergence",
+    "order_index": 2,
+    "duration_minutes": 30,
+    "created_at": "2025-12-22 15:38:00.429846+00",
+    "updated_at": "2025-12-22 15:38:00.429846+00"
+  },
+  {
+    "id": "8e225ebb-413d-4503-b43b-369b193de2a4",
+    "course_id": "0b4cebd4-1077-4bb1-8ba7-48b65ddfb359",
+    "title": "Introduction to Robotics",
+    "slug": "robotics-introduction",
+    "content": "Robotics is the intersection of mechanical engineering, electrical engineering, and computer science.\n\nWhat is a Robot?\nA robot is a programmable machine capable of carrying out complex actions automatically.\n\nKey Components:\n\n1. Mechanical Structure:\n   Physical body, joints, links, and end-effectors\n\n2. Sensors:\n   Devices that perceive the environment\n   - Cameras (vision)\n   - Lidar (distance)\n   - IMU (orientation)\n   - Force/torque sensors\n\n3. Actuators:\n   Devices that create motion\n   - Motors (DC, servo, stepper)\n   - Hydraulic systems\n   - Pneumatic systems\n\n4. Control System:\n   Brain of the robot (microcontrollers, computers)\n\n5. Power Supply:\n   Batteries, power management systems\n\nTypes of Robots:\n- Industrial robots (manufacturing)\n- Mobile robots (autonomous vehicles)\n- Humanoid robots\n- Drones\n- Medical robots\n- Service robots\n\nApplications:\n- Manufacturing automation\n- Healthcare assistance\n- Search and rescue\n- Space exploration\n- Agriculture\n- Entertainment",
+    "order_index": 1,
+    "duration_minutes": 20,
+    "created_at": "2025-12-22 15:38:00.824918+00",
+    "updated_at": "2025-12-22 15:38:00.824918+00"
+  },
+  {
+    "id": "ba05e440-5b4a-4286-853c-f07f07c2dc6c",
+    "course_id": "0b4cebd4-1077-4bb1-8ba7-48b65ddfb359",
+    "title": "Sensors and Actuators",
+    "slug": "sensors-actuators",
+    "content": "Sensors and actuators are the eyes, ears, and muscles of a robot.\n\nSENSORS:\n\n1. Position Sensors:\n   - Encoders: measure rotation\n   - Potentiometers: measure angle\n   - GPS: global positioning\n\n2. Distance Sensors:\n   - Ultrasonic: sound waves\n   - Infrared (IR): light reflection\n   - Lidar: laser scanning\n\n3. Vision Sensors:\n   - Cameras: image capture\n   - Depth cameras: 3D perception\n\n4. Force/Touch Sensors:\n   - Force sensors: measure applied force\n   - Tactile sensors: detect contact\n\n5. Inertial Sensors:\n   - Accelerometer: linear acceleration\n   - Gyroscope: angular velocity\n   - IMU: combined acceleration and rotation\n\nACTUATORS:\n\n1. Electric Motors:\n   - DC Motors: continuous rotation\n   - Servo Motors: precise position control\n   - Stepper Motors: discrete steps\n\n2. Linear Actuators:\n   - Convert rotary motion to linear\n   - Used for extending/retracting\n\n3. Pneumatic/Hydraulic:\n   - Air or fluid pressure\n   - High force applications\n\nSensor Fusion:\nCombining data from multiple sensors for better accuracy and reliability.\n\nControl Loop:\nSense → Process → Act → Sense (repeat)",
+    "order_index": 2,
+    "duration_minutes": 25,
+    "created_at": "2025-12-22 15:38:01.02309+00",
+    "updated_at": "2025-12-22 15:38:01.02309+00"
+  },
+  {
+    "id": "c084f103-316e-4ba4-9c3f-f77f602ade4b",
+    "course_id": "0b4cebd4-1077-4bb1-8ba7-48b65ddfb359",
+    "title": "Robot Kinematics",
+    "slug": "kinematics",
+    "content": "Kinematics is the study of motion without considering forces.\n\nForward Kinematics:\nCalculate end-effector position from joint angles.\nGiven: Joint angles θ₁, θ₂, ..., θₙ\nFind: End-effector position (x, y, z) and orientation\n\nInverse Kinematics:\nCalculate joint angles needed to reach desired position.\nGiven: Desired end-effector position\nFind: Required joint angles\n\nThis is more challenging and may have multiple solutions.\n\nCoordinate Frames:\n- Base frame: fixed reference\n- Link frames: attached to each link\n- End-effector frame: tool position\n\nTransformation Matrices:\nDescribe position and orientation of one frame relative to another.\n\nDenavit-Hartenberg (DH) Parameters:\nStandard method to describe robot geometry:\n- Link length (a)\n- Link twist (α)\n- Link offset (d)\n- Joint angle (θ)\n\nApplications:\n- Path planning\n- Trajectory generation\n- Robot arm control\n- Animation\n\nDegrees of Freedom (DOF):\nNumber of independent movements a robot can make.\n- 6 DOF needed for arbitrary position and orientation",
+    "order_index": 3,
+    "duration_minutes": 30,
+    "created_at": "2025-12-22 15:38:01.219286+00",
+    "updated_at": "2025-12-22 15:38:01.219286+00"
+  },
+  {
+    "id": "a4c93810-503f-4ea6-82be-adb73cca0433",
+    "course_id": "0b4cebd4-1077-4bb1-8ba7-48b65ddfb359",
+    "title": "ROS Basics",
+    "slug": "ros-basics",
+    "content": "Robot Operating System (ROS) is a flexible framework for writing robot software.\n\nNote: ROS is not an actual operating system but a middleware framework.\n\nKey Concepts:\n\n1. Nodes:\n   Individual processes that perform computation\n   Example: camera_node, motor_controller_node\n\n2. Topics:\n   Named channels for message passing\n   Publishers send messages, subscribers receive\n   Many-to-many communication\n\n3. Messages:\n   Data structures sent over topics\n   Examples: sensor_msgs/Image, geometry_msgs/Twist\n\n4. Services:\n   Request-response communication\n   One-to-one, synchronous\n\n5. Actions:\n   For long-running tasks with feedback\n   Can be preempted (cancelled)\n\n6. Parameter Server:\n   Shared dictionary for configuration\n\nROS Architecture:\n- Master: coordinates communication\n- Nodes: run computations\n- roscore: starts master and other core components\n\nCommon ROS Tools:\n- rosrun: run a node\n- roslaunch: start multiple nodes\n- rostopic: interact with topics\n- rosbag: record and playback data\n- rviz: 3D visualization\n- rqt: graphical tools\n\nAdvantages:\n- Hardware abstraction\n- Code reusability\n- Language independent (C++, Python)\n- Large community and packages\n- Simulation tools (Gazebo)",
+    "order_index": 4,
+    "duration_minutes": 25,
+    "created_at": "2025-12-22 15:38:01.423062+00",
+    "updated_at": "2025-12-22 15:38:01.423062+00"
+  },
+  {
+    "id": "62878280-3048-4f05-b24f-a5450286e517",
+    "course_id": "0b4cebd4-1077-4bb1-8ba7-48b65ddfb359",
+    "title": "AI in Robotics",
+    "slug": "ai-robotics",
+    "content": "Artificial Intelligence enhances robot capabilities with perception, decision-making, and learning.\n\nComputer Vision:\nEnable robots to understand visual world:\n- Object detection and recognition\n- Semantic segmentation\n- Depth estimation\n- Visual SLAM (Simultaneous Localization and Mapping)\n\nPath Planning:\nFind optimal routes from start to goal:\n- A* algorithm\n- Dijkstra's algorithm\n- RRT (Rapidly-exploring Random Tree)\n- Potential fields\n\nMachine Learning in Robotics:\n\n1. Supervised Learning:\n   - Object classification\n   - Gesture recognition\n   - Quality inspection\n\n2. Reinforcement Learning:\n   - Robot learns by trial and error\n   - Examples: walking, grasping\n   - Reward-based optimization\n\n3. Deep Learning:\n   - CNN for image processing\n   - RNN for sequential tasks\n   - Transfer learning\n\nNatural Language Processing:\n- Voice commands\n- Human-robot interaction\n- Task understanding\n\nSensor Fusion:\nCombine multiple sensor data using ML:\n- Kalman filters\n- Particle filters\n- Neural network fusion\n\nAutonomous Navigation:\n- Obstacle avoidance\n- Localization\n- Mapping\n- Motion planning\n\nChallenges:\n- Real-time processing\n- Uncertainty handling\n- Safety and reliability\n- Sim-to-real transfer",
+    "order_index": 5,
+    "duration_minutes": 30,
+    "created_at": "2025-12-22 15:38:01.620136+00",
+    "updated_at": "2025-12-22 15:38:01.620136+00"
+  }
+]

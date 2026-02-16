@@ -1,111 +1,88 @@
-'use client';
+import Hero from '@/components/Hero';
+import CourseCard from '@/components/CourseCard';
+import Footer from '@/components/Footer';
+//import { supabase } from '@/lib/supabase';
+import { BookOpen, Sparkles, Target } from 'lucide-react';
 
-import { useEffect, useState, Suspense } from 'react';
-import axios from 'axios';
-import Link from 'next/link';
-import Hero from './components/Hero';
-import { useSearchParams } from 'next/navigation';
+async function getCategories() {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_API_BASE_URL}/categories/`,
+    { cache: 'no-store' }
+  );
 
-function HomeContent() {
-  const [articles, setArticles] = useState([]);
-  const [loading, setLoading] = useState(true);
-  
-  const searchParams = useSearchParams();
-  const categoryId = searchParams.get('category');
+  if (!res.ok) {
+    throw new Error('Failed to fetch categories');
+  }
 
-  useEffect(() => {
-    setLoading(true);
-    let url = 'http://127.0.0.1:8000/api/articles/';
-    if (categoryId) {
-        url += `?category=${categoryId}`;
-    }
+  return res.json();
+}
 
-    axios.get(url)
-      .then(response => {
-        setArticles(response.data);
-        setLoading(false);
-      })
-      .catch(error => {
-        console.error("Error connecting to Django:", error);
-        setLoading(false);
-      });
-  }, [categoryId]);
+export default async function Home() {
+  const courses = await getCategories();
 
   return (
-    <>
-      {/* 1. HERO SECTION */}
+    <div className="min-h-screen bg-white">
       <Hero />
 
-      {/* 2. LATEST TUTORIALS SECTION */}
-      {/* 'courses-area' and 'pb-120' force the footer to stay down */}
-      <section className="courses-area fix pt-120 pb-120">
-        <div className="container">
-          
-          {/* Section Title */}
-          <div className="row">
-             <div className="col-lg-12">
-                <div className="section-title center-align text-center mb-50">
-                    <h5>Latest Tutorials</h5>
-                    <h2>Explore Our Guides</h2>
-                </div>
-             </div>
+      <section id="courses" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Explore Our Courses
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Choose from our comprehensive curriculum designed to take you from
+              beginner to expert in the most sought-after technologies.
+            </p>
           </div>
 
-          {loading && <p className="text-center">Loading articles...</p>}
-
-          <div className="row">
-            {articles.map(article => (
-              /* BOOTSTRAP COLUMN: 3 columns on large screens */
-              <div key={article.id} className="col-xl-4 col-lg-4 col-md-6">
-                
-                {/* CARD CONTAINER (Styled manually to match Educato) */}
-                <div className="box-courses mb-30" style={{ background: '#fff', padding: '20px', borderRadius: '10px', boxShadow: '0 0 10px rgba(0,0,0,0.1)' }}>
-                   
-                   {/* Category Badge */}
-                   <span className="text-uppercase" style={{ color: '#ff7350', fontSize: '12px', fontWeight: 'bold' }}>
-                    {article.category.name}
-                   </span>
-
-                   {/* Title */}
-                   <h3 className="mt-2" style={{ fontSize: '20px', minHeight: '60px', fontWeight: '700' }}>
-                     <Link href={`/article/${article.slug}`} style={{ color: '#101a2e' }}>
-                       {article.title}
-                     </Link>
-                   </h3>
-
-                   {/* Date */}
-                   <p style={{ color: '#888', fontSize: '14px', marginBottom: '15px' }}>
-                    {new Date(article.created_at).toDateString()}
-                   </p>
-
-                   {/* Button */}
-                   <Link href={`/article/${article.slug}`} className="btn ss-btn" style={{ width: '100%', textAlign: 'center' }}>
-                      Read Tutorial
-                   </Link>
-
-                </div>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+            {courses.map((course) => (
+              <CourseCard key={course.id} course={course} />
             ))}
           </div>
 
-          {!loading && articles.length === 0 && (
-             <div className="row">
-                <div className="col-12 text-center">
-                    <p>No articles found.</p>
-                </div>
-             </div>
-          )}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
+            <div className="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
+              <div className="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <BookOpen className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">
+                Structured Learning
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Follow a carefully designed curriculum from basics to advanced topics.
+              </p>
+            </div>
 
+            <div className="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
+              <div className="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <Sparkles className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">
+                Hands-on Projects
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Build real-world projects to solidify your understanding and skills.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
+              <div className="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <Target className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">
+                Clear Explanations
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Complex concepts broken down into easy-to-understand language.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
-    </>
-  );
-}
 
-export default function Home() {
-  return (
-    <Suspense fallback={<div className="p-5 text-center">Loading...</div>}>
-      <HomeContent />
-    </Suspense>
+      <Footer />
+    </div>
   );
 }

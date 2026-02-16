@@ -1,0 +1,90 @@
+[
+  {
+    "id": "3e03e1c8-348f-437d-aebc-dce502eede08",
+    "lesson_id": "cc0ca6df-b12a-4901-944d-df7a735a87a6",
+    "title": "Your First Python Program",
+    "code": "# This is a comment\nprint(\"Hello, World!\")\nprint(\"Welcome to Python Programming!\")",
+    "language": "python",
+    "output": "Hello, World!\nWelcome to Python Programming!",
+    "explanation": "The print() function displays text to the console. Comments start with # and are ignored by Python.",
+    "order_index": 1,
+    "created_at": "2025-12-22 15:37:56.447521+00"
+  },
+  {
+    "id": "b40a509e-bdb1-46c1-aa3d-f7fd762c0f4b",
+    "lesson_id": "f95e050a-1766-4ca0-8d64-6108b621597d",
+    "title": "Variable Assignment",
+    "code": "# Integer\nage = 25\n\n# Float\nheight = 5.9\n\n# String\nname = \"Alice\"\n\n# Boolean\nis_student = True\n\n# Print variables\nprint(f\"Name: {name}\")\nprint(f\"Age: {age}\")\nprint(f\"Height: {height}\")\nprint(f\"Student: {is_student}\")",
+    "language": "python",
+    "output": "Name: Alice\nAge: 25\nHeight: 5.9\nStudent: True",
+    "explanation": "Python variables can store different types of data. F-strings (formatted strings) allow easy variable interpolation.",
+    "order_index": 1,
+    "created_at": "2025-12-22 15:37:57.21681+00"
+  },
+  {
+    "id": "4d3e265d-9ee1-4f40-b049-e394a911287f",
+    "lesson_id": "f95e050a-1766-4ca0-8d64-6108b621597d",
+    "title": "Type Checking",
+    "code": "x = 10\ny = 3.14\nz = \"Hello\"\n\nprint(type(x))  # <class 'int'>\nprint(type(y))  # <class 'float'>\nprint(type(z))  # <class 'str'>",
+    "language": "python",
+    "output": "<class 'int'>\n<class 'float'>\n<class 'str'>",
+    "explanation": "The type() function returns the data type of a variable.",
+    "order_index": 2,
+    "created_at": "2025-12-22 15:37:57.4163+00"
+  },
+  {
+    "id": "223410fa-14f0-4430-a59f-ae5a752d5a2e",
+    "lesson_id": "ca1bb685-8231-4051-9e0c-bcc26950e0d4",
+    "title": "If-Else Statement",
+    "code": "age = 18\n\nif age >= 18:\n    print(\"You are an adult\")\nelse:\n    print(\"You are a minor\")",
+    "language": "python",
+    "output": "You are an adult",
+    "explanation": "If condition is True, first block executes. Otherwise, else block executes.",
+    "order_index": 1,
+    "created_at": "2025-12-22 15:37:57.824136+00"
+  },
+  {
+    "id": "f68be694-9445-4ab1-b13c-5c958ccdf23c",
+    "lesson_id": "ca1bb685-8231-4051-9e0c-bcc26950e0d4",
+    "title": "If-Elif-Else",
+    "code": "score = 85\n\nif score >= 90:\n    grade = \"A\"\nelif score >= 80:\n    grade = \"B\"\nelif score >= 70:\n    grade = \"C\"\nelse:\n    grade = \"F\"\n\nprint(f\"Your grade is: {grade}\")",
+    "language": "python",
+    "output": "Your grade is: B",
+    "explanation": "Elif (else if) checks additional conditions. First True condition executes, rest are skipped.",
+    "order_index": 2,
+    "created_at": "2025-12-22 15:37:58.021501+00"
+  },
+  {
+    "id": "b1c8d1eb-eb2a-4fc4-874e-c344c26fc189",
+    "lesson_id": "595ac1be-e8ef-4706-8469-66eacc3e67e5",
+    "title": "Simple AI Decision Making",
+    "code": "def make_decision(temperature):\n    if temperature > 30:\n        return \"It's hot! Turn on AC\"\n    elif temperature > 20:\n        return \"Weather is pleasant\"\n    else:\n        return \"It's cold! Turn on heater\"\n\n# Test the AI agent\nprint(make_decision(35))\nprint(make_decision(25))\nprint(make_decision(15))",
+    "language": "python",
+    "output": "It's hot! Turn on AC\nWeather is pleasant\nIt's cold! Turn on heater",
+    "explanation": "This simple rule-based system demonstrates basic AI decision-making logic.",
+    "order_index": 1,
+    "created_at": "2025-12-22 15:37:58.644191+00"
+  },
+  {
+    "id": "99351f1b-7352-4942-b4cf-19f181f9189d",
+    "lesson_id": "f542025e-e5f3-4614-8d18-b6f4f38dfc4b",
+    "title": "Breadth-First Search",
+    "code": "from collections import deque\n\ndef bfs(graph, start, goal):\n    queue = deque([start])\n    visited = {start}\n    parent = {start: None}\n\n    while queue:\n        node = queue.popleft()\n        if node == goal:\n            path = []\n            while node:\n                path.append(node)\n                node = parent[node]\n            return path[::-1]\n\n        for neighbor in graph[node]:\n            if neighbor not in visited:\n                visited.add(neighbor)\n                parent[neighbor] = node\n                queue.append(neighbor)\n\n    return None\n\n# Example graph\ngraph = {\n    'A': ['B', 'C'],\n    'B': ['D', 'E'],\n    'C': ['F'],\n    'D': [],\n    'E': ['F'],\n    'F': []\n}\n\nresult = bfs(graph, 'A', 'F')\nprint(f\"Path: {' -> '.join(result)}\")",
+    "language": "python",
+    "output": "Path: A -> C -> F",
+    "explanation": "BFS explores all neighbors at current depth before moving deeper. Uses a queue for level-by-level traversal.",
+    "order_index": 1,
+    "created_at": "2025-12-22 15:37:59.034956+00"
+  },
+  {
+    "id": "96bc6ad9-9262-4035-b635-46f96a19cf3a",
+    "lesson_id": "bec6109d-800b-4696-8283-6490cecc0f76",
+    "title": "Simple ML Example",
+    "code": "import numpy as np\n\n# Simple dataset\nX = np.array([1, 2, 3, 4, 5])\ny = np.array([2, 4, 6, 8, 10])\n\n# Calculate mean\nX_mean = np.mean(X)\ny_mean = np.mean(y)\n\n# Calculate slope and intercept\nnumerator = np.sum((X - X_mean) * (y - y_mean))\ndenominator = np.sum((X - X_mean) ** 2)\nslope = numerator / denominator\nintercept = y_mean - slope * X_mean\n\nprint(f\"Equation: y = {slope}x + {intercept}\")\n\n# Make prediction\nnew_x = 6\nprediction = slope * new_x + intercept\nprint(f\"Prediction for x=6: {prediction}\")",
+    "language": "python",
+    "output": "Equation: y = 2.0x + 0.0\nPrediction for x=6: 12.0",
+    "explanation": "This implements simple linear regression from scratch using the least squares method.",
+    "order_index": 1,
+    "created_at": "2025-12-22 15:37:59.634782+00"
+  }
+]

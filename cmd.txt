@@ -16,3 +16,16 @@ use (-) for bullets
 ## = H2 (Big Section Header) 
 ### = H3 (Medium Sub-header) 
 **Text** = Bold (Small, just bold)
+
+
+----------- Github ----------
+
+Remove the Folder from Git
+
+git rm -r --cached FOLDER_NAME
+
+Save the Change
+git commit -m "Remove unwanted folder from GitHub"
+
+Update GitHub
+git push origin main
