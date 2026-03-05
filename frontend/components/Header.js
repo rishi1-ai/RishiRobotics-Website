@@ -9,7 +9,7 @@ export default function Header() {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'Python', href: '/courses/python-basics' },
+    { name: 'Python', href: '/courses/python' },
     { name: 'AI & ML', href: '/courses/artificial-intelligence' },
     { name: 'Deep Learning', href: '/courses/deep-learning' },
     { name: 'Robotics', href: '/courses/robotics' },
