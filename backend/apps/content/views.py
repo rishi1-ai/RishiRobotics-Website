@@ -2,8 +2,8 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from django.shortcuts import get_object_or_404
-from .models import Article, Category
-from .serializers import ArticleListSerializer, ArticleDetailSerializer, CategorySerializer
+from .models import Article, Category, PracticeQuestion
+from .serializers import ArticleListSerializer, ArticleDetailSerializer, CategorySerializer, PracticeQuestionSerializer
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticatedOrReadOnly])
@@ -33,4 +33,16 @@ def get_article_detail(request, slug):
 def get_categories(request):
     categories = Category.objects.all()
     serializer = CategorySerializer(categories, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def get_questions(request):
+    category_id = request.query_params.get('category')
+
+    questions = PracticeQuestion.objects.all()
+
+    if category_id:
+        questions = questions.filter(category_id=category_id)
+
+    serializer = PracticeQuestionSerializer(questions, many=True)
     return Response(serializer.data)

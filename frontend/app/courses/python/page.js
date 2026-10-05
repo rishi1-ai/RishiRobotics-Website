@@ -4,7 +4,8 @@ const pythonCourses = [
   {
     slug: "python-basics",
     title: "Python Basics",
-    description: "Learn the fundamentals of Python including variables, data types, loops, and functions.",
+    description:
+      "Learn the fundamentals of Python including variables, data types, loops, and functions.",
     difficulty_level: "Beginner",
     icon: "Code2",
     color: "#3B82F6",
@@ -12,7 +13,8 @@ const pythonCourses = [
   {
     slug: "intermediate-python",
     title: "Intermediate Python",
-    description: "Learn file handling, exception handling, modules, and object-oriented programming.",
+    description:
+      "Learn file handling, exception handling, modules, and object-oriented programming.",
     difficulty_level: "Intermediate",
     icon: "Cpu",
     color: "#10B981",
@@ -20,7 +22,8 @@ const pythonCourses = [
   {
     slug: "advanced-python",
     title: "Advanced Python",
-    description: "Explore advanced Python concepts like decorators, generators, multithreading and packages.",
+    description:
+      "Explore advanced Python concepts like decorators, generators, multithreading and packages.",
     difficulty_level: "Advanced",
     icon: "Brain",
     color: "#8B5CF6",

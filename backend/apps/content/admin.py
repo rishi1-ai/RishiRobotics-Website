@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.db import models
 from markdownx.widgets import AdminMarkdownxWidget # Import the widget
 from .models import Category, Article
+from .models import PracticeQuestion
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
@@ -19,3 +20,8 @@ class ArticleAdmin(admin.ModelAdmin):
     formfield_overrides = {
         models.TextField: {'widget': AdminMarkdownxWidget},
     }
+
+@admin.register(PracticeQuestion)
+class PracticeQuestionAdmin(admin.ModelAdmin):
+    list_display = ('id', 'category', 'question')
+    list_display_links = ('id', 'question')

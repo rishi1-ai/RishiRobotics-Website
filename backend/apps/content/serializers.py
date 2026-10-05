@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Article, Category
+from .models import Article, Category, PracticeQuestion
 
 # 1. New Mini Serializer for the Sidebar
 class SidebarArticleSerializer(serializers.ModelSerializer):
@@ -29,3 +29,8 @@ class ArticleDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
         fields = ['id', 'title', 'slug', 'category', 'content', 'created_at', 'updated_at']
+
+class PracticeQuestionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PracticeQuestion
+        fields = '__all__'
